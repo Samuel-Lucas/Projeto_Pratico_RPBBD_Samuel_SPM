@@ -2,6 +2,16 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 export default function Header() {
+
+    const corPreta = event => {
+        const el = event.target
+        el.style.color = 'black'
+    }
+
+    const corBranca = event => {
+        const el = event.target
+        el.style.color = 'white'
+    }
     
     return (
         <header>
@@ -22,15 +32,21 @@ export default function Header() {
                         <div className="collapse navbar-collapse" id="navPrincipal">
                             <ul className="navbar-nav ml-auto">
                                 <li className="nav-item menu_item" onmouseover="mudaEstilo()">
-                                    <Link to="/Produtos"><h4>Produtos</h4></Link>
+                                    <Link to="/Produtos" onMouseOver={event => corPreta(event)} onMouseOut={event => corBranca(event)}>
+                                         <h4>Produtos</h4>
+                                    </Link>
                                 </li>
 
                                 <li className="nav-item menu_item" onmouseover="mudaEstilo()">
-                                    <Link to="/Lojas"><h4>Lojas</h4></Link>
+                                    <Link to="/Lojas" onMouseOver={event => corPreta(event)} onMouseOut={event => corBranca(event)}>
+                                        <h4>Lojas</h4>
+                                    </Link>
                                 </li>
 
                                 <li className="nav-item menu_item" onmouseover="mudaEstilo()">
-                                    <Link to="/Fale-Conosco"><h4>Fale conosco</h4></Link>
+                                    <Link to="/Fale-Conosco" onMouseOver={event => corPreta(event)} onMouseOut={event => corBranca(event)}>
+                                        <h4>Fale conosco</h4>
+                                    </Link>
                                 </li>
                             </ul>
                         </div>
