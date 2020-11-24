@@ -1,16 +1,5 @@
 import React from 'react'
 
-import bancoInter from "../images/banco_inter.png"
-import americanExpress from "../images/american_express.png"
-import visa from "../images/visa.jpg"
-import masterCard from "../images/mastercard.png"
-import pagSeguro from "../images/pagseguro.png"
-import elo from "../images/elo.png"
-import boleto from "../images/boleto.png"
-import ebit from "../images/ebit.jpg"
-import compraSegura from "../images/compra_segura.jpg"
-import safe from "../images/safe.jpg"
-
 export default function Footer () {
     return (
         <footer>
@@ -35,38 +24,38 @@ export default function Footer () {
 
                         <ul>
                             <li>
-                                <img src={bancoInter} width="40px" style={{paddingBottom: '5px'}} />
+                                <img src="/images/banco_inter.png" width="40px" style={{paddingBottom: '5px'}} />
                             </li>
             
                             <li>
-                                <img src={americanExpress} width="35px" />
+                                <img src="/images/american_express.png" width="35px" />
                             </li>
             
                             <li>
-                                <img src={visa} width="40px" style={{paddingBottom: '4px'}} />
+                                <img src="/images/visa.png" width="40px" style={{paddingBottom: '4px'}} />
                             </li>
             
                             <li>
-                                <img src={masterCard} width="45px" style={{paddingBottom: '6px'}} />
+                                <img src="/images/mastercard.png" width="45px" style={{paddingBottom: '6px'}} />
                             </li>
             
                             <li>
-                                <img src={pagSeguro} width="40px" />
+                                <img src="/images/pagseguro.png" width="40px" />
                             </li>
             
                             <li>
-                                <img src={elo} width="40px" />
+                                <img src="/images/elo.png" width="40px" />
                             </li>
             
                             <li>
-                                <img src={boleto} width="40px" />
+                                <img src="/images/boleto.png" width="40px" />
                             </li>
                         </ul>
 
                         <ul>
-                            <li><img src={ebit} width="50px" /></li>
-                            <li><img src={compraSegura} width="55px" style={{paddingBottom: '8px'}} /></li>
-                            <li><img src={safe} width="55px" style={{paddingBottom: '8px'}} /></li>
+                            <li><img src="/images/ebit.jpg" width="50px" /></li>
+                            <li><img src="/images/compra_segura.jpg" width="55px" style={{paddingBottom: '8px'}} /></li>
+                            <li><img src="/images/safe.jpg" width="55px" style={{paddingBottom: '8px'}} /></li>
                         </ul>       
                     </div>
                 </div>

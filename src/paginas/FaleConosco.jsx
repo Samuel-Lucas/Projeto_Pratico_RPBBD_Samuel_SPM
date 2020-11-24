@@ -1,6 +1,4 @@
 import React from 'react'
-import mail from "../images/mail.png"
-import whats from "../images/whats.jpg"
 
 export default function FaleConosco () {
 
@@ -14,12 +12,12 @@ export default function FaleConosco () {
             <div className="row d-flex justify-content-around">
 
                 <div className="col-md-4 d-flex flex-column">
-                    <img src={mail} width="23%" className="img-fluid mx-auto"/>
+                    <img src="/images/mail.png" width="23%" className="img-fluid mx-auto"/>
                     <p className="text-center font-weight-bold">games.shelter@hotmail.com</p>
                 </div>
 
                 <div className="col-md-4 d-flex flex-column">
-                    <img src={whats} width="25%" className="img-fluid mx-auto"/>
+                    <img src="/images/whats.jpg" width="25%" className="img-fluid mx-auto"/>
                     <p className="text-center font-weight-bold">(11) 94444-4444</p>
                 </div>
             </div>

@@ -1,5 +1,4 @@
 import React from 'react'
-import acessories from "../images/acessories.jpg"
 
 export default function PaginaInicial () {
 
@@ -11,7 +10,7 @@ export default function PaginaInicial () {
             <div className="container d-flex flex-column">
                 
                     <div className="col-md-6 d-flex align-self-center">
-                        <img src={acessories} className="img-fluid" width='650' />
+                        <img src="/images/acessories.jpg" className="img-fluid" width='650' />
                     </div>
 
                     <div className="col-md- d-flex justify-content-center m-4">
