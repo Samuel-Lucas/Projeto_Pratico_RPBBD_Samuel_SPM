@@ -1,9 +1,16 @@
 import React from 'react'
 
-export default function Produtos () {
-
-    return (
+export default class Produtos extends React.Component {
+    
+    render() {
+        return (
         <section>
+
+            {this.props.arrayProdutos.map(
+                row =>
+                <div>{row.categoria}</div>
+            )}
+
             <div className="container">
                 <div className="row d-flex flex-nowrap">
                     <div className="col-md-3 lista w-50">
@@ -77,6 +84,7 @@ export default function Produtos () {
                     </div>
                 </div>
             </div>
-        </section>
+        </section> 
     );
+    }
 }
