@@ -1,7 +1,34 @@
 import React from 'react'
 
 export default class Produtos extends React.Component {
-    
+
+    constructor(props) {
+        super(props);
+        this.exibirCategoria = this.exibirCategoria.bind(this);
+    }
+
+    exibirCategoria(categoria) {
+
+        const produtos = document.querySelectorAll('div#computadores, div#notebooks, div#videogames, div#acessorios')
+
+        if(categoria == 'todos') {
+            for(let i = 0; i < produtos.length; i++) {
+
+                produtos[i].style.display = 'flex'    
+            }
+        } else {
+        
+            for(let i = 0; i < produtos.length; i++) {
+
+                if(produtos[i].id == categoria) {
+                    produtos[i].style.display = 'flex'
+                } else {
+                    produtos[i].style.display = 'none'
+                }
+            }
+        }
+    }
+
     render() {
         return (
         <section>
@@ -12,19 +39,19 @@ export default class Produtos extends React.Component {
                         <h4>Categorias</h4>
 
                         <ul>
-                            <li onclick="exibirCategoria('todos')">Todos</li>
-                            <li onclick="exibirCategoria('computadores')">Computadores</li>
-                            <li onclick="exibirCategoria('notebooks')">Notebooks</li>
-                            <li onclick="exibirCategoria('videogames')">Videogames</li>
-                            <li onclick="exibirCategoria('acessorios')">Acessórios</li>
+                            <li onClick={() => this.exibirCategoria('todos')}>Todos</li>
+                            <li onClick={() => this.exibirCategoria('computadores')}>Computadores</li>
+                            <li onClick={() => this.exibirCategoria('notebooks')}>Notebooks</li>
+                            <li onClick={() => this.exibirCategoria('videogames')}>Videogames</li>
+                            <li onClick={() => this.exibirCategoria('acessorios')}>Acessórios</li>
                         </ul>
                     </div>
 
-                    <div id="container" className="todos">
+                    <div id="container">
 
                         {this.props.arrayProdutos.map( row =>
 
-                            <div className="card border-0" style={{maxWidth: '16rem'}}>
+                            <div id={row.categoria} className="card border-0" style={{maxWidth: '16rem'}}>
                                 <img className="card-img-top" onclick="abreImg()" src={row.imagem} className="img-fluid"/>
                                 <div className="card-body">
                                 <p className="card-text border-bottom">{row.descricao}</p>
