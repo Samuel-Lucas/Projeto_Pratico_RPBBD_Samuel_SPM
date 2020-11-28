@@ -7,9 +7,9 @@ export default class Produtos extends React.Component {
         this.exibirCategoria = this.exibirCategoria.bind(this);
     }
 
-    exibirCategoria(categoria) {
+    exibirCategoria(e, categoria) {
 
-        const produtos = document.querySelectorAll('div#computadores, div#notebooks, div#videogames, div#acessorios')
+        let produtos = document.querySelectorAll('div#computadores, div#notebooks, div#videogames, div#acessorios')
 
         if(categoria == 'todos') {
             for(let i = 0; i < produtos.length; i++) {
@@ -27,6 +27,17 @@ export default class Produtos extends React.Component {
                 }
             }
         }
+
+        let listas = document.querySelectorAll('#listaCategoria li')
+
+        for (let j = 0; j < listas.length; j++) {
+            listas[j].style.backgroundColor = 'white'
+            listas[j].style.color = 'black'
+        } 
+
+        let lista = e.target
+        lista.style.backgroundColor = 'blue'
+        lista.style.color = 'white'
     }
 
     render() {
@@ -38,12 +49,12 @@ export default class Produtos extends React.Component {
                     <div className="col-md-3 lista w-50">
                         <h4>Categorias</h4>
 
-                        <ul>
-                            <li onClick={() => this.exibirCategoria('todos')}>Todos</li>
-                            <li onClick={() => this.exibirCategoria('computadores')}>Computadores</li>
-                            <li onClick={() => this.exibirCategoria('notebooks')}>Notebooks</li>
-                            <li onClick={() => this.exibirCategoria('videogames')}>Videogames</li>
-                            <li onClick={() => this.exibirCategoria('acessorios')}>Acessórios</li>
+                        <ul id="listaCategoria">
+                            <li onClick={(e) => this.exibirCategoria(e, 'todos')}>Todos</li>
+                            <li onClick={(e) => this.exibirCategoria(e, 'computadores')}>Computadores</li>
+                            <li onClick={(e) => this.exibirCategoria(e, 'notebooks')}>Notebooks</li>
+                            <li onClick={(e) => this.exibirCategoria(e, 'videogames')}>Videogames</li>
+                            <li onClick={(e) => this.exibirCategoria(e, 'acessorios')}>Acessórios</li>
                         </ul>
                     </div>
 
