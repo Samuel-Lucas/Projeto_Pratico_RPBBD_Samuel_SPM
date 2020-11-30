@@ -1,24 +1,24 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function PaginaInicial () {
 
     return (
-        <section className="jumbotron-fluid">
-            <h2 className="text-dark text-center pt-3">Seja bem vindo(a) !</h2>
-            <p className="text-center">A loja de acessórios que presta o melhor serviço !</p>
+        <section className="jumbotron-fluid mb-4">
+            <h1 className="text-dark text-center pt-3">Seja bem vindo(a) !</h1>
 
             <div className="container d-flex flex-column">
-                
-                    <div className="col-md-6 d-flex align-self-center">
-                        <img src="/images/acessories.jpg" className="img-fluid" width='650' />
-                    </div>
 
-                    <div className="col-md- d-flex justify-content-center m-4">
+                <div className="jumbotron my-4 d-flex align-items-start flex-wrap" style={{background: "url('/images/index_img.jpg') no-repeat center"}}>
+                    <h3 className="text-center ml-3"><strong>A loja de acessórios que presta o melhor serviço !</strong></h3>
+
+                    <div className="mx-auto d-flex justify-content-center m-4">
                         
-                            <a href="produtos.html" className="btn btn-primary mx-auto text-light">
-                                Confira nossos produtos
-                            </a>
+                        <Link to="/Produtos" className="btn btn-lg btn-outline-primary text-succes">
+                            <strong>Confira nossos produtos</strong>
+                        </Link>
                     </div>
+                </div>
             </div>
         </section>
     );

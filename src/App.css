@@ -1,8 +1,3 @@
-@keyframes opacidade {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
-
 body {
   margin: 0;
   height: 100%;
@@ -19,10 +14,18 @@ header .logo {
   color: white;
 }
 
-#boas_vindas img {
-  animation-name: opacidade;
-  animation-duration: 4s;
+.jumbotron {
+  background-size: cover;
+  height: 450px;
 }
+
+.jumbotron h3 {
+  -webkit-text-stroke-width: 2.5px;
+  -webkit-text-stroke-color: #000;
+  font-size: 3em;
+  color: #d8d2ca;
+}
+
 
 i {
   font-size: 30px;
@@ -42,15 +45,6 @@ i {
   height: 70%;
   margin: auto;
 }
-
-#boas_vindas button {
-  animation-name: opacidade;
-  animation-delay: 2s;
-  animation-duration: 1s;
-  animation-direction: alternate-reverse;
-  animation-iteration-count: infinite;
-}
-
 
 footer {
   background: linear-gradient( rgb(39, 39, 187), rgb(173, 13, 173));
