@@ -36,7 +36,7 @@ export default class Produtos extends React.Component {
         } 
 
         let lista = e.target
-        lista.style.backgroundColor = 'blue'
+        lista.style.backgroundColor = '#1a75ff'
         lista.style.color = 'white'
     }
 
@@ -49,13 +49,13 @@ export default class Produtos extends React.Component {
                     <div className="col-md-3 lista w-50">
                         <h4>Categorias</h4>
 
-                        <ul id="listaCategoria">
-                            <li onClick={(e) => this.exibirCategoria(e, 'todos')}>Todos</li>
-                            <li onClick={(e) => this.exibirCategoria(e, 'computadores')}>Computadores</li>
-                            <li onClick={(e) => this.exibirCategoria(e, 'notebooks')}>Notebooks</li>
-                            <li onClick={(e) => this.exibirCategoria(e, 'videogames')}>Videogames</li>
-                            <li onClick={(e) => this.exibirCategoria(e, 'acessorios')}>Acessórios</li>
-                        </ul>
+                        <ul id="listaCategoria" className="list-group">
+                            <li className="list-group-item active border" onClick={(e) => this.exibirCategoria(e, 'todos')}>Todos</li>
+                            <li className="list-group-item" onClick={(e) => this.exibirCategoria(e, 'computadores')}>Computadores</li>
+                            <li className="list-group-item" onClick={(e) => this.exibirCategoria(e, 'notebooks')}>Notebooks</li>
+                            <li className="list-group-item" onClick={(e) => this.exibirCategoria(e, 'videogames')}>Videogames</li>
+                            <li className="list-group-item" onClick={(e) => this.exibirCategoria(e, 'acessorios')}>Acessórios</li>
+                        </ul>  
                     </div>
 
                     <div id="container">

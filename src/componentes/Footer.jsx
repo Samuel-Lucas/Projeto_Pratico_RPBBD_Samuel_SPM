@@ -32,7 +32,7 @@ export default function Footer () {
                             </li>
             
                             <li>
-                                <img src="/images/visa.png" width="40px" style={{paddingBottom: '4px'}} />
+                                <img src="/images/visa.jpg" width="40px" style={{paddingBottom: '4px'}} />
                             </li>
             
                             <li>

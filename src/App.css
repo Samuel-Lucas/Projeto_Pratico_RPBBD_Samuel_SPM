@@ -26,7 +26,6 @@ header .logo {
   color: #d8d2ca;
 }
 
-
 i {
   font-size: 30px;
 }
@@ -38,12 +37,6 @@ i {
 .menu_item a {
   color: white;
   text-decoration: none;
-}
-
-#boas_vindas {
-  width: 80%;
-  height: 70%;
-  margin: auto;
 }
 
 footer {
@@ -94,50 +87,11 @@ footer ul {
 }
 
 .lista ul li {
-  list-style: disc;
-  margin: 10px;
+  margin: 2px;
   cursor: pointer;
   padding-left: 10px;
 }
 
 .preco_descontado {
   color: red;
-}
-
-/* Fale conosco */
-
-#contato {
-  display: flex;
-  justify-content: space-between;
-  width: 70%;
-  height: 20%;
-  margin: auto;
-}
-
-#contato p {
-  font-weight: bold;
-}
-
-#formulario {
-  width: 70%;
-  margin: auto;
-}
-
-.botao {
-  background-color: blue;
-  color: white;
-  font-weight: bold;
-  padding: 10px;
-  border-radius: 20px;;
-
-}
-
-/* Lojas */
-
-#lojas {
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
-  height: 50%;
-  margin: auto;
 }

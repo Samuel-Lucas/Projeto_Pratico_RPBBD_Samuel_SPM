@@ -33,7 +33,7 @@ export default function FaleConosco () {
 
                 <textarea className="form-control" placeholder="Escreva sua mensagem" cols="30" rows="5" style={{width: '320px'}}></textarea><br/>
 
-                <input className="btn btn-success" type="submit" value="Enviar"/>
+                <a className="btn btn-success" href="#">Enviar</a>
             </form>
         </div>
     </section>
