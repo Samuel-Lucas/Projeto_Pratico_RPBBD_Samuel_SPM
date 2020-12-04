@@ -75,11 +75,6 @@ footer ul {
   cursor: pointer;
 }
 
-.item_prod {
-  margin: 15px;
-  width: 300px;
-}
-
 .lista {
   width: 20%;
   height: 25%;
@@ -87,7 +82,7 @@ footer ul {
 }
 
 .lista ul li {
-  margin: 2px;
+  margin: 1.5px;
   cursor: pointer;
   padding-left: 10px;
 }
